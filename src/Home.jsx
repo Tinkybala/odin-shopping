@@ -1,0 +1,13 @@
+function Home(){
+    return(
+        <>
+        <h2>We love our plants</h2>
+        <h2>About Us</h2>
+        <p>Here at Plantpals, we are devoted to our houseplants and customers. We specialise in exotics and do accept custom orders for which we will try 
+            our best to source from all around the world.
+        </p>
+        </>
+    )
+}
+
+export default Home;

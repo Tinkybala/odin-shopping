@@ -1,0 +1,21 @@
+.dropdown{
+
+}
+
+.content{
+    display: none;
+    position: absolute;
+}
+
+.btn{
+    color: white;
+}
+
+.dropdown:hover .content{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
