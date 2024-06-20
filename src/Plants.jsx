@@ -1,13 +1,19 @@
-import plants from '../src/assets/plants.json';
+
 import Card from '../src/components/card';
+import PlantDetail from './plantDetail';
+import { useParams, Outlet, useOutletContext } from 'react-router-dom';
 import styles from '../src/styles/plants.module.css';
+import data from '../src/assets/plants.json'
+import Navbar from './components/navbar';
+
+
 
 function Plants(){
-    console.log(plants)
+    const [cart, setCart] = useOutletContext();
     return(
-        <div className={styles.container}>
-            {plants.data.map((item, i) => (<Card src={item.image_url} alt={item.slug} title={item.scientific_name} inStock = {false} key={i} />))}
-        </div>
+        <>  
+            <Outlet context={{data, cart, setCart}} />
+        </>
     )
 }
 

@@ -5,8 +5,7 @@ import Plants from './Plants'
 import Pots from './pots'
 import Essentials from './Essentials'
 import Home from './Home'
-import { useParams } from 'react-router-dom'
-
+import { Outlet, useParams } from 'react-router-dom'
 let loaded = false;
 
 function App() {
@@ -15,7 +14,7 @@ function App() {
   const [cart, setCart] = useState([]);
   const { name } = useParams();
 
-  //get plants from API
+  //get fake shop items from API
   useEffect(() => {
     if(!loaded){
       loaded = true;
@@ -28,16 +27,7 @@ function App() {
   
   return (
     <>
-      <Navbar />
-      {name === "plants" ? (
-        <Plants />
-      ) : name === "pots" ? (
-        <Pots />
-      ) : name === "essentials" ? (
-        <Essentials />
-      ) : (
-        <Home />
-      )}
+      <Outlet context={[cart, setCart]} />
     </>
   )
 }

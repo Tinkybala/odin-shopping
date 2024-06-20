@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.img{
+    max-width: 700px;
+    padding: 20px
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 10px;
+}
+
+.info{
+    text-align: left;
+}
+
+.info h2{
+    font-size: 60px;
+}
+
+.info p{
+    font-size: 25px;
+}
