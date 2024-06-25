@@ -20,7 +20,8 @@ const routes = [
                 {path: "0", element: <PlantDetail index={0} />},
                 {path: '', element: <Plantlist />},
                 {path: "*", element: <ErrorPage />}
-            ]}
+            ]},
+            {path: 'pots', element: <ErrorPage />}
         ]
     },
 ]

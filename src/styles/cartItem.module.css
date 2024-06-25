@@ -2,8 +2,15 @@
     display: flex;
     align-items: center;
     width: 100%;
+    justify-content: space-between;
 }
 
 .img{
     max-height: 100px;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }

@@ -8,8 +8,10 @@ function CartItem({src, alt, title, quantity}){
     console.log(quantity)
     return(
         <div className={styles.container}>
-            <img src={src} alt={alt} className={styles.img}/>
-            <p>{title}</p>
+            <div className={styles.left}>
+                <img src={src} alt={alt} className={styles.img}/>
+                <p>{title}</p>
+            </div>
             <div>
                 <p>{quantity}</p>
             </div>

@@ -4,7 +4,7 @@ function ErrorPage(){
     return(
         <div>
             <h1>Oopsies!</h1>
-            <p>The item has not been added to the system yet</p>
+            <p>This section is still in progress</p>
             <Link to="..">Click here to go back</Link>
         </div>
     )

@@ -7,9 +7,6 @@
     position: absolute;
 }
 
-.btn{
-    color: white;
-}
 
 .dropdown:hover .content{
     display: flex;
